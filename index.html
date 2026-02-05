@@ -6,10 +6,15 @@
     <link rel="Stylesheet" href="./styles/styles.css" />
     <title>Homepage</title>
   </head>
-
+  <!--------------------------------------Header & Navigation--------------------------->
   <body>
     <header id="page-header">
-      <img src="./assets/icon.svg" width="48px" height="48px" />
+      <img
+        src="./assets/icon.svg"
+        width="48px"
+        height="48px"
+        alt="Website Logo"
+      />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -17,11 +22,35 @@
         </ul>
       </nav>
     </header>
+    <!--------------------------------Hero Image--------------------------------->
     <main>
       <section id="hero">
         <p class="display-text">Student of the University of Montana</p>
         <button>View my Profile</button>
       </section>
+      <!------------------------------Contact Info--------------------------------->
+      <form>
+        <div>
+          <label for="user-name-input">Please Put Your User Name Here:</label>
+          <input type="text" id="user-name" name="user-name" required />
+        </div>
+        <div>
+          <label for="email-input">Please Put Your Email Here:</label>
+          <input type="text" id="email-input" name="email-input" required />
+        </div>
+        <div>
+          <label for="comment-area">Please Leave Your Message Here:</label
+          ><br />
+          <textarea
+            placeholder="500 characters maximum"
+            name="message-box"
+            id="message-box"
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" id="submit-button">Send Your Message</button>
+      </form>
       <h1>Home</h1>
     </main>
   </body>
