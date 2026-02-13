@@ -16,9 +16,12 @@ h5,
 h6 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+h3 {
+  font-weight: bolder;
+}
 p,
 small {
-  color: rgb(97, 97, 101);
+  color: rgb(47, 47, 52);
   font-family: "Times New Roman", Times, serif;
 }
 a {
@@ -40,6 +43,9 @@ button {
 }
 #page-header {
   background-color: rgb(128, 0, 0);
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 
 #hero {
@@ -56,6 +62,7 @@ table {
   border: 1px solid;
   margin: 1rem auto;
   width: 100%;
+  box-sizing: border-box;
 }
 ul {
   list-style: none;
@@ -92,4 +99,14 @@ caption {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: larger;
   line-height: 2rem;
+}
+.card-title {
+  color: rgb(0, 0, 0);
+}
+.card-box {
+  padding: 0.5rem;
+  border: 1px solid;
+  margin: 1rem auto;
+  width: 100%;
+  box-sizing: border-box;
 }
