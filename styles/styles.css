@@ -46,6 +46,8 @@ button {
   position: sticky;
   top: 0;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #hero {
@@ -109,4 +111,31 @@ caption {
   margin: 1rem auto;
   width: 100%;
   box-sizing: border-box;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-item {
+  border: 1px;
+  border-radius: 0.8rem;
+  padding: 0.5rem;
+}
+.bento-container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+.box {
+  background-color: blue;
+  padding: 1rem;
+}
+.span-col-top {
+  grid-column: span 1;
+}
+.span-row-sides {
+  grid-row: span 2;
 }
