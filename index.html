@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Homepage</title>
   </head>
@@ -29,6 +30,7 @@
         <button>View my Profile</button>
       </section>
       <!------------------------------Contact Info--------------------------------->
+      <h1>Home</h1>
       <form>
         <h2><strong>Contact Us</strong></h2>
         <div>
@@ -83,7 +85,59 @@
           </li>
         </ul>
       </section>
-      <h1>Home</h1>
+<!-------------------------------------Testimonail Cards---------------------------->
+      <section class="flex justify-center"><ul class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 w-176" >
+  <li class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl">
+    <figure>
+      <img src="./assets/test-quote.svg" class="h-4 w-4 absolute">
+      <blockquote class="m-5">
+        <p class="text-sm">This web page is one of the most unqiue web pages I have ever scene.</p>
+      </blockquote>
+
+      <figcaption class="flex m-4">
+        <img src="./assets/fred_drift.jpg"alt="" class="h-8 w-8 rounded-full mr-2" />
+        <div>
+          <p>Fred Drift</p>
+          <p class="text-xs">Rock and Roll Guitarist</p>
+        </div>
+      </figcaption>
+    </figure>
+  </li>
+  <li class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl">
+    <figure>
+      <img src="./assets/test-quote.svg" class="h-4 w-4 absolute">
+      <blockquote class="m-5">
+        <p class="text-sm">I am an advid gamer and I just love the bento boxes. An homage to video games.</p>
+      </blockquote>
+
+      <figcaption class="flex m-4">
+        <img src="./assets/john_video_game.jpg"alt="" class="h-8  w-8 rounded-full mr-2 "/>
+        <div>
+          <p>John Video Game</p>
+          <p class="text-xs">Hisotry Professor, Carl University</p>
+        </div>
+      </figcaption>
+    </figure>
+  </li>
+  <li class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl">
+    <figure>
+      <img src="./assets/test-quote.svg" class="h-4 w-4 absolute">
+      <blockquote class="m-5">
+        <p class="text-sm">Click this link and win $$$ in less than 5 minutes. Click Now!!!
+        </p>
+      </blockquote>
+
+      <figcaption class="flex m-4">
+        <img  src="./assets/paul_human.jpg"alt="" class="h-8  w-8 rounded-full mr-2"/>
+        <div>
+          <p>Paul Human</p>
+          <p class="text-xs">Buisness Job</p>
+        </div>
+      </figcaption>
+    </figure>
+  </li>          
+</ul>
+</section>
     </main>
   </body>
 </html>
