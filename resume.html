@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <a class="skip-link" href="#main-content">Go to main</a>
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Resume</title>
   </head>
@@ -15,73 +16,78 @@
         height="48px"
         alt="Website Logo"
       />
-      <nav>
+      <nav aria-label="Primary Navigation">
         <ul class="header-nav">
           <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="resume.html">Resume</a></li>
+          <li class="nav-item">
+            <a href="resume.html" aria-current="page">Resume</a>
+          </li>
           <li class="nav-item"><a href="bento-grid.html">Bento Grid</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-    <h1>Resume</h1>
-    <!----------------------------------------Education----------------------------------------------->
-    <section>
-      <h2>Education</h2>
-      <h3>
-        <strong>High School Deploma, Big Sky High School</strong>
-      </h3>
-      <p>August 2021 - June 2025</p>
-    </section>
+    <main id="main-content">
+      <h1>Resume</h1>
+      <!----------------------------------------Education----------------------------------------------->
+      <section>
+        <h2>Education</h2>
+        <h3>
+          <strong>High School Deploma, Big Sky High School</strong>
+        </h3>
+        <p>August 2021 - June 2025</p>
+      </section>
 
-    <!----------------------------------------Professional Experience----------------------------------->
-    <section>
-      <h2>Professional Experience</h2>
-      <h3>
-        <strong>Technician - Montana Ace Power Pros - Missoula, MT</strong>
-      </h3>
-      <p>June 2025- Present</p>
-      <ul>
-        <li>Preform minor repair work on small engines</li>
-        <li>Assist Senior Technicians with their repair work</li>
-        <li>Stock inventory when needed</li>
-      </ul>
-    </section>
-    <!----------------------------------------Skills----------------------------------------------->
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Basic Small Engine Repair Work</li>
-        <li>Introductory Experience With Python Coding</li>
-      </ul>
-    </section>
-    <!------------------------------------Course Table---------------------------------->
-    <table>
-      <caption>
-        Relates Courses
-      </caption>
-      <thead>
-        <tr>
-          <th scope="col">Course Name</th>
-          <th scope="col">Course Info & Outcome</th>
-        </tr>
-        <tr>
-          <th scope="row">Introduction to Computer Science</th>
-          <td>Learning basic coding in Python [Status: Complete]</td>
-        </tr>
-        <tr>
-          <th scope="row">Interdisciplinary Computer Science I</th>
-          <td>Learning more advanced python coding [Status: Ongoing</td>
-        </tr>
-        <tr>
-          <th scope="row">Web Design and Programming</th>
-          <td>Learning basic web design in HTML [Status: Ongoing]</td>
-        </tr>
-        <tr>
-          <th scope="row">Software Design and Development I</th>
-          <td>Learning software design and evelopment [Status: Yet to Take]</td>
-        </tr>
-      </thead>
-    </table>
+      <!----------------------------------------Professional Experience----------------------------------->
+      <section>
+        <h2>Professional Experience</h2>
+        <h3>
+          <strong>Technician - Montana Ace Power Pros - Missoula, MT</strong>
+        </h3>
+        <p>June 2025- Present</p>
+        <ul>
+          <li>Preform minor repair work on small engines</li>
+          <li>Assist Senior Technicians with their repair work</li>
+          <li>Stock inventory when needed</li>
+        </ul>
+      </section>
+      <!----------------------------------------Skills----------------------------------------------->
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Basic Small Engine Repair Work</li>
+          <li>Introductory Experience With Python Coding</li>
+        </ul>
+      </section>
+      <!------------------------------------Course Table---------------------------------->
+      <table>
+        <caption>
+          Relates Courses
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Course Name</th>
+            <th scope="col">Course Info & Outcome</th>
+          </tr>
+          <tr>
+            <th scope="row">Introduction to Computer Science</th>
+            <td>Learning basic coding in Python [Status: Complete]</td>
+          </tr>
+          <tr>
+            <th scope="row">Interdisciplinary Computer Science I</th>
+            <td>Learning more advanced python coding [Status: Ongoing</td>
+          </tr>
+          <tr>
+            <th scope="row">Web Design and Programming</th>
+            <td>Learning basic web design in HTML [Status: Ongoing]</td>
+          </tr>
+          <tr>
+            <th scope="row">Software Design and Development I</th>
+            <td>
+              Learning software design and evelopment [Status: Yet to Take]
+            </td>
+          </tr>
+        </thead>
+      </table>
+    </main>
   </body>
 </html>

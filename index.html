@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <a class="skip-link" href="#main-content">Go to main</a>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Homepage</title>
@@ -15,16 +16,16 @@
         width="48px"
         height="48px"
       />
-      <nav>
+      <nav aria-label="Primary Navigation">
         <ul class="header-nav">
-          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="index.html" aria-current="page">Home</a></li>
           <li class="nav-item"><a href="resume.html">Resume</a></li>
           <li class="nav-item"><a href="bento-grid.html">Bento Grid</a></li>
         </ul>
       </nav>
     </header>
     <!--------------------------------Hero Image--------------------------------->
-    <main>
+    <main id="main-content">
       <section id="hero">
         <p class="display-text">Student of the University of Montana</p>
         <button>View my Profile</button>

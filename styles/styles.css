@@ -26,7 +26,7 @@
     font-family: "Times New Roman", Times, serif;
   }
   a {
-    color: rgb(0, 128, 128);
+    color: rgb(2, 199, 199);
     font-weight: bold;
     font-family: "Times New Roman", Times, serif;
   }
@@ -157,5 +157,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .skip-link {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+    top: auto;
+    left: -999px;
+    font-size: larger;
+    overflow: hidden;
+  }
+  .skip-link:focus {
+    left: 0.75rem;
+    top: 0.75rem;
+  }
+  nav a[aria-current="page"] {
+    border: 1px solid;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

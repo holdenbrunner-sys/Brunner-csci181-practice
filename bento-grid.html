@@ -3,42 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <a class="skip-link" href="#main-content">Go to main</a>
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Bento Grid</title>
   </head>
   <!-------------------------------------Header & Nav--------------------------------->
   <body>
-    <header id="page-header" alt="Website Logo">
-      <img src="./assets/icon.svg" width="48px" height="48px" />
-      <nav>
-        <ul class="header-nav">
-          <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="resume.html">Resume</a></li>
-          <li class="nav-item"><a href="bento-grid.html">Bento Grid</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!---------------------------------------Bento Boxs------------------------------>
-    <section class="bento-container">
-      <div class="box span-col">
-        <img src="./assets/nintendo.switch.jpg" height="100%" width="100%" />
-      </div>
-      <div class="box span-col">
-        <img src="./assets/xbox.jpg" width="100%" height="100%" />
-      </div>
-      <div class="box span-row-sides">
-        <img src="./assets/arcade1.jpg" width="100%" heignt="100%" />
-      </div>
-      <div class="box span-col middle-bento">
-        <img src="./assets/Discs.jpg" width="50%" height="100%" />
-        <h1 class="bento-text">VIDEO GAMES</h1>
-      </div>
-      <div class="box span-row-sides">
-        <img src="./assets/gaming-pc.jpg" width="100%" height="100%" />
-      </div>
-      <div class="box bottom-middle">
-        <img src="./assets/playstation.jpg" width="100%" height="100%" />
-      </div>
-    </section>
+    <main id="main-content">
+      <header id="page-header" alt="Website Logo">
+        <img src="./assets/icon.svg" width="48px" height="48px" />
+        <nav aria-label="Primary Navigation">
+          <ul class="header-nav">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="resume.html">Resume</a></li>
+            <li class="nav-item">
+              <a href="bento-grid.html" aria-current="page">Bento Grid</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!---------------------------------------Bento Boxs------------------------------>
+      <section class="bento-container">
+        <div class="box span-col">
+          <img src="./assets/nintendo.switch.jpg" height="100%" width="100%" />
+        </div>
+        <div class="box span-col">
+          <img src="./assets/xbox.jpg" width="100%" height="100%" />
+        </div>
+        <div class="box span-row-sides">
+          <img src="./assets/arcade1.jpg" width="100%" heignt="100%" />
+        </div>
+        <div class="box span-col middle-bento">
+          <img src="./assets/Discs.jpg" width="50%" height="100%" />
+          <h1 class="bento-text">VIDEO GAMES</h1>
+        </div>
+        <div class="box span-row-sides">
+          <img src="./assets/gaming-pc.jpg" width="100%" height="100%" />
+        </div>
+        <div class="box bottom-middle">
+          <img src="./assets/playstation.jpg" width="100%" height="100%" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
