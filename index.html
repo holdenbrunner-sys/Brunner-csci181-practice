@@ -10,7 +10,7 @@
   <!--------------------------------------Header & Navigation--------------------------->
   <body>
     <a class="skip-link" href="#main-content">Go to main</a>
-    <header id="page-header" >
+    <header id="page-header">
       <img
         src="./assets/icon.svg"
         width="48px"
@@ -19,7 +19,9 @@
       />
       <nav aria-label="Primary Navigation">
         <ul class="header-nav">
-          <li class="nav-item"><a href="index.html" aria-current="page">Home</a></li>
+          <li class="nav-item">
+            <a href="index.html" aria-current="page">Home</a>
+          </li>
           <li class="nav-item"><a href="resume.html">Resume</a></li>
           <li class="nav-item"><a href="bento-grid.html">Bento Grid</a></li>
         </ul>
@@ -37,11 +39,11 @@
         <h2><strong>Contact Us</strong></h2>
         <div>
           <label for="user-name-input">Please Put Your User Name Here:</label>
-          <input type="text" id="user-name" name="user-name" required />
+          <input type="text" id="user-name" name="user-name" required="" />
         </div>
         <div>
           <label for="email-input">Please Put Your Email Here:</label>
-          <input type="text" id="email-input" name="email-input" required />
+          <input type="text" id="email-input" name="email-input" required="" />
         </div>
         <div>
           <label for="comment-area">Please Leave Your Message Here:</label
@@ -51,7 +53,7 @@
             name="message-box"
             id="message-box"
             maxlength="500"
-            required
+            required=""
           ></textarea>
         </div>
         <button type="submit" id="submit-button">Send Your Message</button>
@@ -60,14 +62,14 @@
       <h2>Projects</h2>
       <section>
         <ul>
-          <li">
+          <li>
             <section>
               <a class="card-title" href="">Text Based Adventure</a>
               <p>
-              A text based RPG andventure made with python code in Goole Colab.
-              The player could pick from three different routes and experience
-              three unique minigames
-             </p>
+                A text based RPG andventure made with python code in Goole
+                Colab. The player could pick from three different routes and
+                experience three unique minigames
+              </p>
             </section>
           </li>
           <li>
@@ -80,66 +82,107 @@
             <section>
               <a class="card-title" href="">Checkout UI</a>
               <p>
-              A UI made in Google Colab. A person would type wat items they want
-              and how much into the UI and it would give them the price.
+                A UI made in Google Colab. A person would type wat items they
+                want and how much into the UI and it would give them the price.
               </p>
             </section>
           </li>
         </ul>
       </section>
-<!-------------------------------------Testimonail Cards---------------------------->
-      <section class="flex justify-center"><ul class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 w-176" >
-  <li class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl">
-    <figure>
-      <img src="./assets/test-quote.svg" class="h-4 w-4 absolute">
-      <blockquote class="m-5">
-        <p class="text-sm">This web page is one of the most unqiue web pages I have ever scene.</p>
-      </blockquote>
+      <!-------------------------------------Testimonail Cards---------------------------->
+      <section class="flex justify-center">
+        <ul
+          class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 w-176"
+        >
+          <li
+            class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl"
+          >
+            <figure>
+              <img
+                src="./assets/test-quote.svg"
+                class="h-4 w-4 absolute"
+                alt=""
+              />
+              <blockquote class="m-5">
+                <p class="text-sm">
+                  This web page is one of the most unqiue web pages I have ever
+                  scene.
+                </p>
+              </blockquote>
 
-      <figcaption class="flex m-4">
-        <img src="./assets/fred_drift.jpg"alt="" class="h-8 w-8 rounded-full mr-2" />
-        <div>
-          <p>Fred Drift</p>
-          <p class="text-xs">Rock and Roll Guitarist</p>
-        </div>
-      </figcaption>
-    </figure>
-  </li>
-  <li class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl">
-    <figure>
-      <img src="./assets/test-quote.svg" class="h-4 w-4 absolute">
-      <blockquote class="m-5">
-        <p class="text-sm">I am an advid gamer and I just love the bento boxes. An homage to video games.</p>
-      </blockquote>
+              <figcaption class="flex m-4">
+                <img
+                  src="./assets/fred_drift.jpg"
+                  alt=""
+                  class="h-8 w-8 rounded-full mr-2"
+                />
+                <div>
+                  <p>Fred Drift</p>
+                  <p class="text-xs">Rock and Roll Guitarist</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li
+            class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl"
+          >
+            <figure>
+              <img
+                src="./assets/test-quote.svg"
+                class="h-4 w-4 absolute"
+                alt=""
+              />
+              <blockquote class="m-5">
+                <p class="text-sm">
+                  I am an advid gamer and I just love the bento boxes. An homage
+                  to video games.
+                </p>
+              </blockquote>
 
-      <figcaption class="flex m-4">
-        <img src="./assets/john_video_game.jpg"alt="" class="h-8  w-8 rounded-full mr-2 "/>
-        <div>
-          <p>John Video Game</p>
-          <p class="text-xs">Hisotry Professor, Carl University</p>
-        </div>
-      </figcaption>
-    </figure>
-  </li>
-  <li class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl">
-    <figure>
-      <img src="./assets/test-quote.svg" class="h-4 w-4 absolute">
-      <blockquote class="m-5">
-        <p class="text-sm">Click this link and win $$$ in less than 5 minutes. Click Now!!!
-        </p>
-      </blockquote>
+              <figcaption class="flex m-4">
+                <img
+                  src="./assets/john_video_game.jpg"
+                  alt=""
+                  class="h-8 w-8 rounded-full mr-2"
+                />
+                <div>
+                  <p>John Video Game</p>
+                  <p class="text-xs">Hisotry Professor, Carl University</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li
+            class="border w-56 rounded-sm border-gray-100 border-opacity-50 shadow-xl"
+          >
+            <figure>
+              <img
+                src="./assets/test-quote.svg"
+                class="h-4 w-4 absolute"
+                alt=""
+              />
+              <blockquote class="m-5">
+                <p class="text-sm">
+                  Click this link and win $$$ in less than 5 minutes. Click
+                  Now!!!
+                </p>
+              </blockquote>
 
-      <figcaption class="flex m-4">
-        <img  src="./assets/paul_human.jpg"alt="" class="h-8  w-8 rounded-full mr-2"/>
-        <div>
-          <p>Paul Human</p>
-          <p class="text-xs">Buisness Job</p>
-        </div>
-      </figcaption>
-    </figure>
-  </li>          
-</ul>
-</section>
+              <figcaption class="flex m-4">
+                <img
+                  src="./assets/paul_human.jpg"
+                  alt=""
+                  class="h-8 w-8 rounded-full mr-2"
+                />
+                <div>
+                  <p>Paul Human</p>
+                  <p class="text-xs">Buisness Job</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
