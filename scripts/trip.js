@@ -4,7 +4,7 @@ const distance_miles = 450;
 const mpg = 15;
 const gas_price = 3.0;
 const fuel_capacity = 10;
-const is_round_trip = true;
+let is_round_trip = true;
 
 let total_distance;
 

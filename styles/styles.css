@@ -1,5 +1,12 @@
 @import url(https://fonts.google.com/specimen/Roboto);
 @layer base {
+  :root {--text-body: rgb(0, 0, 0);
+  --surface-bg: #ffffff; --minor-text-body: rgb(47, 47, 52)}
+  
+  body{background-color: var(--surface-bg); color: var(--text-body);}
+
+  body.dark{--surface-bg: #000000; --text-body: #ffffff; --minor-text-body: #ffffff}
+
   p,
   h1,
   h2,
@@ -22,7 +29,7 @@
   }
   p,
   small {
-    color: rgb(47, 47, 52);
+    color: var(--minor-text-body);
     font-family: "Times New Roman", Times, serif;
   }
   a {
@@ -36,7 +43,7 @@
     font-weight: 700;
   }
   .display-text {
-    color: rgb(0, 0, 0);
+    color: var(--text-body);
     text-align: center;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     font-size: larger;
@@ -104,7 +111,7 @@
     line-height: 2rem;
   }
   .card-title {
-    color: rgb(0, 0, 0);
+    color: var(--text-body);
   }
   .card-box {
     padding: 0.5rem;
@@ -175,6 +182,7 @@
   nav a[aria-current="page"] {
     border: 1px solid;
   }
+  #theme-toggle{}
 }
 @media (prefers-reduced-motion: reduce) {
   * {
