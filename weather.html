@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <!------------------------------------Header & Nav---------------------------------->
+    <a class="skip-link" href="#main-content">Go to main</a>
+    <header id="page-header">
+      <img
+        src="./assets/icon.svg"
+        width="48px"
+        height="48px"
+        alt="Website Logo"
+      />
+      <nav aria-label="Primary Navigation">
+        <ul class="header-nav">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item"><a href="bento-grid.html">Bento Grid</a></li>
+          <li class="nav-item">
+            <a href="weather.html" aria-current="page">Weather</a>
+          </li>
+          <li>
+            <button id="theme-toggle" type="button">Switch To Dark Mode</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-------------------------------------------Main------------------------------------>
+    <main id="main-content">
+      <h1>Missoula Weather</h1>
+      <div id="weather-output"></div>
+    </main>
+  </body>
+</html>

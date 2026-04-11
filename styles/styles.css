@@ -1,4 +1,3 @@
-@import url(https://fonts.google.com/specimen/Roboto);
 @layer base {
   :root {--text-body: rgb(0, 0, 0);
   --surface-bg: #ffffff; --minor-text-body: rgb(47, 47, 52)}
