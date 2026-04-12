@@ -7,16 +7,16 @@ const output_element = document.getElementById("weather-output");
 //Render Weather
 function renderWeather() {
   if (is_loading) {
-    output_element.innerHTML = "Loading...";
-  }
-  if (error_message) {
-    output_element.innerHTML = "ERROR";
-  }
-  if (weather_data) {
-    const temp = forecastData.properties.periods.temperature[0];
-    output_element.innerHTML = temp;
+    output_element.innerHTML = `<div style="font-size: 6rem;">Loading...</div>`;
+  } else if (error_message) {
+    output_element.innerHTML = `<div style="font-size: 6rem;">ERROR</div>`;
+  } else if (weather_data) {
+    const temp = weather_data.properties.periods[0].temperature;
+    const forecast = weather_data.properties.periods[0].shortForecast;
+    output_element.innerHTML = `<div style="font-size: 6rem;">${temp}\u00B0F</div>
+    <div style="font-size: 1.5rem;">${forecast}</div>`;
   } else {
-    output_element.innerHTML = "Weather Data Not Avalible";
+    output_element.innerHTML = `<div style="font-size: 6rem">Weather Data Not Availible</div>`;
   }
 }
 
@@ -44,3 +44,4 @@ async function getWeatherData() {
 }
 
 getWeatherData();
+console.log(weather_data);

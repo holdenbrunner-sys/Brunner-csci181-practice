@@ -1,10 +1,20 @@
 @layer base {
-  :root {--text-body: rgb(0, 0, 0);
-  --surface-bg: #ffffff; --minor-text-body: rgb(47, 47, 52)}
-  
-  body{background-color: var(--surface-bg); color: var(--text-body);}
+  :root {
+    --text-body: rgb(0, 0, 0);
+    --surface-bg: #ffffff;
+    --minor-text-body: rgb(47, 47, 52);
+  }
 
-  body.dark{--surface-bg: #000000; --text-body: #ffffff; --minor-text-body: #ffffff}
+  body {
+    background-color: var(--surface-bg);
+    color: var(--text-body);
+  }
+
+  body.dark {
+    --surface-bg: #000000;
+    --text-body: #ffffff;
+    --minor-text-body: #ffffff;
+  }
 
   p,
   h1,
@@ -181,7 +191,16 @@
   nav a[aria-current="page"] {
     border: 1px solid;
   }
-  #theme-toggle{}
+  #theme-toggle {
+  }
+  .weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   * {
